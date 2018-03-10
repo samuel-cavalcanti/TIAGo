@@ -1,0 +1,18 @@
+[  4%] Built target tiago_pick_demo_gencfg
+[  4%] Built target geometry_msgs_generate_messages_lisp
+[  4%] Built target _tiago_pick_demo_generate_messages_check_deps_PickUpPoseResult
+[  4%] Built target _tiago_pick_demo_generate_messages_check_deps_PickUpPoseGoal
+[  4%] Built target _tiago_pick_demo_generate_messages_check_deps_PickUpPoseActionResult
+[  4%] Built target _tiago_pick_demo_generate_messages_check_deps_PickUpPoseActionFeedback
+[  4%] Built target _tiago_pick_demo_generate_messages_check_deps_PickUpPoseActionGoal
+[  4%] Built target _tiago_pick_demo_generate_messages_check_deps_PickUpPoseFeedback
+[  4%] Built target actionlib_msgs_generate_messages_lisp
+[  4%] Built target _tiago_pick_demo_generate_messages_check_deps_PickUpPoseAction
+[  4%] Built target geometry_msgs_generate_messages_py
+[  4%] Built target geometry_msgs_generate_messages_cpp
+[  4%] Built target actionlib_msgs_generate_messages_py
+[  4%] Built target actionlib_msgs_generate_messages_cpp
+[ 34%] Built target tiago_pick_demo_generate_messages_lisp
+[ 69%] Built target tiago_pick_demo_generate_messages_py
+[100%] Built target tiago_pick_demo_generate_messages_cpp
+[100%] Built target tiago_pick_demo_generate_messages

@@ -1,0 +1,51 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/samuel/tiago_public_ws/build/tiago_moveit_tutorial/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_172f7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_172f7.dir/build.make CMakeFiles/cmTC_172f7.dir/build
+make[1]: Entrando no diretório `/home/samuel/tiago_public_ws/build/tiago_moveit_tutorial/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_172f7.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_172f7.dir/CheckSymbolExists.c.o   -c /home/samuel/tiago_public_ws/build/tiago_moveit_tutorial/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_172f7
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_172f7.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_172f7.dir/CheckSymbolExists.c.o  -o cmTC_172f7 -rdynamic 
+CMakeFiles/cmTC_172f7.dir/CheckSymbolExists.c.o: na função `main':
+CheckSymbolExists.c:(.text+0x16): referência indefinida para `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: Saindo do diretório `/home/samuel/tiago_public_ws/build/tiago_moveit_tutorial/CMakeFiles/CMakeTmp'
+make[1]: ** [cmTC_172f7] Erro 1
+make: ** [cmTC_172f7/fast] Erro 2
+
+File /home/samuel/tiago_public_ws/build/tiago_moveit_tutorial/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/samuel/tiago_public_ws/build/tiago_moveit_tutorial/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ab856/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ab856.dir/build.make CMakeFiles/cmTC_ab856.dir/build
+make[1]: Entrando no diretório `/home/samuel/tiago_public_ws/build/tiago_moveit_tutorial/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ab856.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_ab856.dir/CheckFunctionExists.c.o   -c /usr/local/share/cmake-3.4/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ab856
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ab856.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_ab856.dir/CheckFunctionExists.c.o  -o cmTC_ab856 -rdynamic -lpthreads 
+/usr/bin/ld: não foi possível encontrar -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: Saindo do diretório `/home/samuel/tiago_public_ws/build/tiago_moveit_tutorial/CMakeFiles/CMakeTmp'
+make[1]: ** [cmTC_ab856] Erro 1
+make: ** [cmTC_ab856/fast] Erro 2
+
+

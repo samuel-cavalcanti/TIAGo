@@ -1,0 +1,116 @@
+// ROS headers
+#include <ros/ros.h>
+
+//#include "/opt/ros/indigo/include/ros/ros.h"
+
+// MoveIt! headers
+#include <moveit/move_group_interface/move_group.h>
+//#include "/opt/ros/indigo/include/moveit/move_group_interface/move_group.h"
+
+// Std C++ headers
+#include <string>
+#include <iostream>
+#include <vector>
+#include <map>
+
+double randomValue() {
+    // gerando um valor aleatório entre 0 e 1.0
+    srand(time(NULL));
+    double xDiv = 10000000;
+    double x = rand() % int(xDiv);
+    x = x / xDiv;
+    return x;
+}
+
+double randomValueToJoint(double min_value, double max_value) {
+    double v =  min_value + randomValue()*(max_value - min_value);
+    std::cout << "value: " << v << std::endl;
+    
+    return v;
+    
+   
+}
+
+/*
+ arm_1_joint [0.2, 2.73]
+ arm_2_joint [-1.55, 1.07]
+ arm_3_joint [-3.51 , 1.55]
+ arm_4_joint [-0.34 , 2.34]
+ arm_5_joint [-2.07 , 2.07]
+ arm_6_joint [-1.55 , 1.55]
+ arm_7_joint [-2.07 , 2.07] 
+ torso_lift_joint [0, 0.35]
+ 
+ */
+
+std::map<std::string, double> set_random_position_to_robot(){
+    std::map<std::string, double> target_position;
+
+
+
+    target_position["torso_lift_joint"] = randomValueToJoint(0, 0.35);
+    target_position["arm_1_joint"] = randomValueToJoint(0.2, 2.73);
+    target_position["arm_2_joint"] = randomValueToJoint(-1.55, 1.07);
+    target_position["arm_3_joint"] = randomValueToJoint(-3.51, 1.55);
+    target_position["arm_4_joint"] = randomValueToJoint(-0.34, 2.34);
+    target_position["arm_5_joint"] = randomValueToJoint(-2.07, 2.07);
+    target_position["arm_6_joint"] = randomValueToJoint(-1.55, 1.55);
+    target_position["arm_7_joint"] = randomValueToJoint(-2.07, 2.07);
+    
+    
+    return target_position;
+}
+
+
+
+
+
+int main(int argc, char** argv) {
+    ros::init(argc, argv, "gerateDataSet");
+
+
+     std::map<std::string, double> target_position = set_random_position_to_robot();
+    
+
+    ros::NodeHandle nh;
+    ros::AsyncSpinner spinner(1);
+    spinner.start();
+
+    std::vector<std::string> torso_arm_joint_names;
+    //select group of joints
+    moveit::planning_interface::MoveGroup group_arm_torso("arm_torso");
+    //choose your preferred planner
+    group_arm_torso.setPlannerId("SBLkConfigDefault");
+
+    torso_arm_joint_names = group_arm_torso.getJoints();
+
+
+    group_arm_torso.setStartStateToCurrentState();
+    group_arm_torso.setMaxVelocityScalingFactor(1.0);
+
+    for (unsigned int i = 0; i < torso_arm_joint_names.size(); ++i)
+        if (target_position.count(torso_arm_joint_names[i]) > 0) {
+            ROS_INFO_STREAM("\t" << torso_arm_joint_names[i] << " goal position: " << target_position[torso_arm_joint_names[i]]);
+            group_arm_torso.setJointValueTarget(torso_arm_joint_names[i], target_position[torso_arm_joint_names[i]]);
+        }
+
+    moveit::planning_interface::MoveGroup::Plan my_plan;
+    group_arm_torso.setPlanningTime(5.0);
+    bool success = group_arm_torso.plan(my_plan);
+
+    if (!success)
+        throw std::runtime_error("No plan found");
+
+    ROS_INFO_STREAM("Plan found in " << my_plan.planning_time_ << " seconds");
+
+    // Execute the plan
+    ros::Time start = ros::Time::now();
+
+    group_arm_torso.move();
+
+    ROS_INFO_STREAM("Motion duration: " << (ros::Time::now() - start).toSec());
+
+    spinner.stop();
+
+    return EXIT_SUCCESS;
+}

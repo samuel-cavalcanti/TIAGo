@@ -1,0 +1,8 @@
+prefix=/home/samuel/tiago_public_ws/devel/.private/pal_gripper
+
+Name: pal_gripper
+Description: Description of pal_gripper
+Version: 0.0.12
+Cflags: 
+Libs: -L/home/samuel/tiago_public_ws/devel/.private/pal_gripper/lib 
+Requires: 

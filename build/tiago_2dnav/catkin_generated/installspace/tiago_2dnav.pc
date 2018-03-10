@@ -1,0 +1,8 @@
+prefix=/home/samuel/tiago_public_ws/install
+
+Name: tiago_2dnav
+Description: Description of tiago_2dnav
+Version: 0.9.8
+Cflags: 
+Libs: -L/home/samuel/tiago_public_ws/install/lib 
+Requires: 

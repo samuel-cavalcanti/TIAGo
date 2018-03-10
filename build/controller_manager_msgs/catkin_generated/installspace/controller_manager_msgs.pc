@@ -1,0 +1,8 @@
+prefix=/home/samuel/tiago_public_ws/install
+
+Name: controller_manager_msgs
+Description: Description of controller_manager_msgs
+Version: 0.2.5
+Cflags: -I/home/samuel/tiago_public_ws/install/include
+Libs: -L/home/samuel/tiago_public_ws/install/lib 
+Requires: std_msgs message_runtime

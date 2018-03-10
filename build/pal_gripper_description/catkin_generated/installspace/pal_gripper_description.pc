@@ -1,0 +1,8 @@
+prefix=/home/samuel/tiago_public_ws/install
+
+Name: pal_gripper_description
+Description: Description of pal_gripper_description
+Version: 0.0.12
+Cflags: 
+Libs: -L/home/samuel/tiago_public_ws/install/lib 
+Requires: 

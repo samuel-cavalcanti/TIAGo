@@ -1,0 +1,14 @@
+[  0%] Built target _pal_device_msgs_generate_messages_check_deps_TimedColourEffect
+[  0%] Built target _pal_device_msgs_generate_messages_check_deps_Bumper
+[  0%] Built target _pal_device_msgs_generate_messages_check_deps_CancelEffect
+[  0%] Built target _pal_device_msgs_generate_messages_check_deps_TimedFadeEffect
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target _pal_device_msgs_generate_messages_check_deps_BatteryState
+[  0%] Built target _pal_device_msgs_generate_messages_check_deps_TimedBlinkEffect
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target _pal_device_msgs_generate_messages_check_deps_LedGroup
+[ 39%] Built target pal_device_msgs_generate_messages_py
+[ 69%] Built target pal_device_msgs_generate_messages_lisp
+[100%] Built target pal_device_msgs_generate_messages_cpp
+[100%] Built target pal_device_msgs_generate_messages

@@ -1,0 +1,8 @@
+prefix=/home/samuel/tiago_public_ws/devel/.private/aruco
+
+Name: aruco
+Description: Description of aruco
+Version: 0.2.2
+Cflags: -I/home/samuel/tiago_public_ws/src/aruco_ros/aruco/include
+Libs: -L/home/samuel/tiago_public_ws/devel/.private/aruco/lib -laruco
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/samuel/tiago_public_ws/install
+
+Name: rqt_controller_manager
+Description: Description of rqt_controller_manager
+Version: 0.2.5
+Cflags: 
+Libs: -L/home/samuel/tiago_public_ws/install/lib 
+Requires: 

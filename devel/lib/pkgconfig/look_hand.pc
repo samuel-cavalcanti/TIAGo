@@ -1,0 +1,1 @@
+/home/samuel/tiago_public_ws/devel/.private/look_hand/lib/pkgconfig/look_hand.pc

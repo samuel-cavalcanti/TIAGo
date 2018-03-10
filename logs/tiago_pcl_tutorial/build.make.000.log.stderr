@@ -1,0 +1,31 @@
+In file included from [01m[K/usr/include/c++/7/backward/strstream:50:0[m[K,
+                 from [01m[K/usr/include/vtk-5.8/vtkIOStream.h:112[m[K,
+                 from [01m[K/usr/include/vtk-5.8/vtkSystemIncludes.h:40[m[K,
+                 from [01m[K/usr/include/vtk-5.8/vtkIndent.h:24[m[K,
+                 from [01m[K/usr/include/vtk-5.8/vtkObjectBase.h:43[m[K,
+                 from [01m[K/usr/include/vtk-5.8/vtkObject.h:41[m[K,
+                 from [01m[K/usr/include/vtk-5.8/vtkObjectFactory.h:43[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/visualization/interactor.h:43[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/visualization/image_viewer.h:45[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/visualization/range_image_visualizer.h:44[m[K,
+                 from [01m[K/home/samuel/tiago_public_ws/src/tiago_tutorials/tiago_pcl_tutorial/src/nodes/region_segment.cpp:65[m[K:
+[01m[K/usr/include/c++/7/backward/backward_warning.h:32:2:[m[K [01;35m[Kwarning: [m[K#warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [[01;35m[K-Wcpp[m[K]
+ #[01;35m[Kwarning[m[K \
+  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/usr/include/pcl-1.7/pcl/visualization/point_cloud_color_handlers.h:725:0[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/visualization/point_cloud_handlers.h:42[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/visualization/common/actor_map.h:40[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/visualization/interactor_style.h:44[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/visualization/image_viewer.h:46[m[K,
+                 from [01m[K/usr/include/pcl-1.7/pcl/visualization/range_image_visualizer.h:44[m[K,
+                 from [01m[K/home/samuel/tiago_public_ws/src/tiago_tutorials/tiago_pcl_tutorial/src/nodes/region_segment.cpp:65[m[K:
+[01m[K/usr/include/pcl-1.7/pcl/visualization/impl/point_cloud_color_handlers.hpp:[m[K In member function ‘[01m[Kvirtual bool pcl::visualization::PointCloudColorHandlerHSVField<PointT>::getColor(vtkSmartPointer<vtkDataArray>&) const[m[K’:
+[01m[K/usr/include/pcl-1.7/pcl/visualization/impl/point_cloud_color_handlers.hpp:254:9:[m[K [01;31m[Kerror: [m[Kreturn-statement with no value, in function returning ‘[01m[Kbool[m[K’ [[01;31m[K-fpermissive[m[K]
+         [01;31m[Kreturn[m[K;
+         [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/pcl-1.7/pcl/visualization/impl/point_cloud_color_handlers.hpp:292:9:[m[K [01;31m[Kerror: [m[Kreturn-statement with no value, in function returning ‘[01m[Kbool[m[K’ [[01;31m[K-fpermissive[m[K]
+         [01;31m[Kreturn[m[K;
+         [01;31m[K^~~~~~[m[K
+make[2]: ** [CMakeFiles/region_segment.dir/src/nodes/region_segment.cpp.o] Erro 1
+make[1]: ** [CMakeFiles/region_segment.dir/all] Erro 2
+make: ** [all] Erro 2

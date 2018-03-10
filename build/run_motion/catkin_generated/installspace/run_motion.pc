@@ -1,0 +1,8 @@
+prefix=/home/samuel/tiago_public_ws/install
+
+Name: run_motion
+Description: Description of run_motion
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/samuel/tiago_public_ws/install/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/samuel/tiago_public_ws/install
+
+Name: tf_lookup
+Description: Description of tf_lookup
+Version: 0.0.1
+Cflags: -I/home/samuel/tiago_public_ws/install/include
+Libs: -L/home/samuel/tiago_public_ws/install/lib 
+Requires: tf

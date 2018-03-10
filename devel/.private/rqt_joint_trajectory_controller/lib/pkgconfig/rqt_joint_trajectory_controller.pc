@@ -1,0 +1,8 @@
+prefix=/home/samuel/tiago_public_ws/devel/.private/rqt_joint_trajectory_controller
+
+Name: rqt_joint_trajectory_controller
+Description: Description of rqt_joint_trajectory_controller
+Version: 0.3.0
+Cflags: 
+Libs: -L/home/samuel/tiago_public_ws/devel/.private/rqt_joint_trajectory_controller/lib 
+Requires: 

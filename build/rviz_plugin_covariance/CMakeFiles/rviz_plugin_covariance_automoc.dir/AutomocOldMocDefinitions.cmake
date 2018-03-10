@@ -1,0 +1,1 @@
+set(AM_OLD_COMPILE_SETTINGS "QT_CORE_LIB;QT_GUI_LIB;QT_NO_DEBUG;QT_NO_KEYWORDS;ROSCONSOLE_BACKEND_LOG4CXX;ROS_PACKAGE_NAME=\"rviz_plugin_covariance\" ~~~ /opt/ros/indigo/include;/usr/include/eigen3;/usr/include/OGRE;/usr/include/opencv;/usr/include/qt4;/usr/include/qt4/QtGui;/usr/include/qt4/QtCore;/usr/include ~~~  ~~~ FALSE ~~~ ")

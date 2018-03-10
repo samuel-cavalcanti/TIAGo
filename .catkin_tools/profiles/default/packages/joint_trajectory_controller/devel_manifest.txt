@@ -1,0 +1,6 @@
+ros_controllers/joint_trajectory_controller
+/home/samuel/tiago_public_ws/devel/.private/joint_trajectory_controller/lib/libjoint_trajectory_controller.so /home/samuel/tiago_public_ws/devel/lib/libjoint_trajectory_controller.so
+/home/samuel/tiago_public_ws/devel/.private/joint_trajectory_controller/lib/joint_trajectory_controller/rrbot /home/samuel/tiago_public_ws/devel/lib/joint_trajectory_controller/rrbot
+/home/samuel/tiago_public_ws/devel/.private/joint_trajectory_controller/lib/pkgconfig/joint_trajectory_controller.pc /home/samuel/tiago_public_ws/devel/lib/pkgconfig/joint_trajectory_controller.pc
+/home/samuel/tiago_public_ws/devel/.private/joint_trajectory_controller/share/joint_trajectory_controller/cmake/joint_trajectory_controllerConfig.cmake /home/samuel/tiago_public_ws/devel/share/joint_trajectory_controller/cmake/joint_trajectory_controllerConfig.cmake
+/home/samuel/tiago_public_ws/devel/.private/joint_trajectory_controller/share/joint_trajectory_controller/cmake/joint_trajectory_controllerConfig-version.cmake /home/samuel/tiago_public_ws/devel/share/joint_trajectory_controller/cmake/joint_trajectory_controllerConfig-version.cmake

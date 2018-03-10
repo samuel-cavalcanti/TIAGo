@@ -1,0 +1,8 @@
+prefix=/home/samuel/tiago_public_ws/devel/.private/aruco_msgs
+
+Name: aruco_msgs
+Description: Description of aruco_msgs
+Version: 0.2.2
+Cflags: -I/home/samuel/tiago_public_ws/devel/.private/aruco_msgs/include
+Libs: -L/home/samuel/tiago_public_ws/devel/.private/aruco_msgs/lib 
+Requires: message_runtime geometry_msgs std_msgs

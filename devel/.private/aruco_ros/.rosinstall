@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/samuel/tiago_public_ws/devel/.private/aruco_ros/setup.sh

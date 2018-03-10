@@ -1,0 +1,8 @@
+prefix=/home/samuel/tiago_public_ws/install
+
+Name: pal_hardware_gazebo
+Description: Description of pal_hardware_gazebo
+Version: 0.0.8
+Cflags: -I/home/samuel/tiago_public_ws/install/include -I/usr/include -I/usr/include/gazebo-2.2 -I/usr/include/sdformat-1.4 -I/usr/include/eigen3
+Libs: -L/home/samuel/tiago_public_ws/install/lib -lpal_hardware_gazebo
+Requires: control_toolbox hardware_interface joint_limits_interface gazebo_ros_control

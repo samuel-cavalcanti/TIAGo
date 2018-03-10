@@ -1,0 +1,8 @@
+prefix=/home/samuel/tiago_public_ws/devel/.private/pal_hardware_interfaces
+
+Name: pal_hardware_interfaces
+Description: Description of pal_hardware_interfaces
+Version: 0.0.3
+Cflags: -I/home/samuel/tiago_public_ws/src/pal_hardware_interfaces/include
+Libs: -L/home/samuel/tiago_public_ws/devel/.private/pal_hardware_interfaces/lib 
+Requires: hardware_interface

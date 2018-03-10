@@ -1,0 +1,8 @@
+prefix=/home/samuel/tiago_public_ws/install
+
+Name: pal_visual_localization_msgs
+Description: Description of pal_visual_localization_msgs
+Version: 0.11.3
+Cflags: -I/home/samuel/tiago_public_ws/install/include
+Libs: -L/home/samuel/tiago_public_ws/install/lib 
+Requires: message_runtime
